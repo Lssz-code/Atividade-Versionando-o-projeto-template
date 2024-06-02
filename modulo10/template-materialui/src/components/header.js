@@ -3,14 +3,12 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-//import MenuIcon from '@mui/icons-material/Menu';
- 
+
 function Header() {
     return (
         <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
+        <AppBar position="static" sx={{ backgroundColor: '#1e90ff' }}>
           <Toolbar>
             <IconButton
               size="large"
@@ -19,11 +17,9 @@ function Header() {
               aria-label="menu"
               sx={{ mr: 2 }}
             >
-              {/*  
-              <MenuIcon />
-              */}
+              {/* <MenuIcon /> */}
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: '#ffffff' }}> {/* Alterar a cor do texto */}
               Gerenciamento de Projetos
             </Typography>
           </Toolbar>
@@ -31,5 +27,6 @@ function Header() {
       </Box>
     );
 }
- 
+
 export default Header;
+
